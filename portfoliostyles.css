@@ -1,48 +1,57 @@
+body {
+    background-color: rgba(192, 192, 192, 0.746);
+    margin: 0;
+    padding-top: 250px; /* Add padding to the top to make space for the image */
+}
+
+header {
+    background-color: navy;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px;
+}
+
+
 nav {
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    background-image:linear-gradient(to right, #f4c281, #d97708, #81902c);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.863);
+    font-size: 20px;
+    padding-left: 0;
+    margin-top: 250px; /* Adjust the top margin to position the navbar below the image */
+    width: 100%;
 }
 
-ul {
-    list-style-type: none;
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.vertical-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 998;
 }
-
-li {
-    margin-right: 10px;
-}
-header {
-    padding: 30px;
-    background-image: linear-gradient(to right, #af7e24, #78560c, #dca838);
-    color: rgb(195, 78, 78); 
-    display: flex;
-    justify-content: center; /* Align the content horizontally to the center */
-    align-items: center; /* Align the content vertically to the center */
-}
-
-
-    body {
-        font-family: "Times New Roman", sans-serif;
-        background-image: url("../img/background-img1.jpg");
-        background-repeat: none;
-        background-size: cover;
-    }
-      
-      h1, h2, h3 {
-        font-family: "Lobster", cursive;
-        color: black;  }
-
-        .navbar-brand {
-            color: #4186cb04; /* Change the color of the navbar brand text */
-            font-size: 38px; /* Change the font size of the navbar brand text */
-        }
-    
-        .nav-link {
-            color: #333; /* Change the color of the navbar links */
-            font-size: 24px; /* Change the font size of the navbar links */
-        }
-        footer {
-            background-image: linear-gradient(#CEC8FF, white);
-            padding: 20px 0; }
