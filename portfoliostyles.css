@@ -1,7 +1,7 @@
 body {
     background-color: rgba(192, 192, 192, 0.746);
     margin: 0;
-    padding-top: 250px; /* Add padding to the top to make space for the image */
+    padding-top: 125px; /* Add padding to the top to make space for the image */
 }
 
 header {
@@ -9,6 +9,7 @@ header {
     color: white;
     font-family: "Times New Roman", sans-serif;
     padding: 20px;
+    padding-left: 145px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -16,15 +17,6 @@ header {
     width: 100%;
     z-index: 999;
 }
-
-.image-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    padding: 20px;
-}
-
 
 nav {
     display: flex;
@@ -34,8 +26,8 @@ nav {
     background-color: rgba(0, 0, 0, 0.863);
     font-size: 20px;
     padding-left: 0;
-    margin-top: 250px; /* Adjust the top margin to position the navbar below the image */
     width: 100%;
+    margin-top: 400px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -55,3 +47,250 @@ nav {
     align-items: flex-start;
     z-index: 998;
 }
+
+#rob {
+    text-align: center;
+    margin-left: 170px;
+    font-size: 36px;
+    color: #090505;
+    margin-top: -200px;
+    font-family: 'Times New Roman', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: glowing 4s infinite;
+   
+}
+
+#smith {
+    text-align: center;
+    font-size: 20px;
+    color: #080606;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+   
+}
+
+
+@keyframes glowing {
+    0% {
+        color: #090505;
+    }
+    50% {
+        color: blue;
+        
+    }
+    100% {
+        color: #090505;
+    }
+}
+.carousel {
+    border: solid #afaeb4;
+    margin-left: 175px;
+}
+
+.carousel-item img {
+    max-height: 500px; /* Adjust the value to set the desired maximum height */
+    width: 500px; /* Let the width adjust automatically based on the aspect ratio */
+    object-fit: cover; /* Ensure the entire image is visible within the container */
+    
+}
+
+.carousel-caption {
+    color: black; /* Set the desired text color */
+    font-size: 100px; /* Adjust the font size to your preference */
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent background color */
+    padding: 2px; /* Add some padding around the caption text */
+    font-family: 'Times New Roman', Times, serif;
+}
+#juan {
+    font-family: 'Times New Roman', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#second {
+    font-family: 'Times New Roman', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgb(46, 45, 43);
+  margin-left: 100px;
+  margin-top: 100px;
+  
+}
+#more {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: blink;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(187, 65, 65, 0.2);
+    padding-left: 20px; /* Adjust the value as needed */
+    color: #0b0404; /* Change the font color to red */
+    background-color: #f5f5f5; /* Change the background color to light gray */
+    border-bottom: 1px solid #000000; /* Add a bottom border */
+    padding-bottom: 10px; /* Adjust the value as needed */
+    
+}
+#quan {
+        margin-left: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: blink;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(187, 65, 65, 0.2);
+        padding-left: 20px; /* Adjust the value as needed */
+        color: #ebe9eb; /* Change the font color to red */
+        background-color: #f90f0f; /* Change the background color to light gray */
+        border-bottom: 1px solid #000000; /* Add a bottom border */
+        padding-bottom: 10px; /* Adjust the value as needed */
+           
+}
+
+
+
+#roberto {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', cursive;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.custom-list li {
+    font-family: 'Times New Roman', sans-serif; /* Custom font family */
+  color: #333; /* Custom text color */
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    margin-bottom: 10px;
+    
+}
+
+.custom-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 40px;
+  }   
+  .custom-list li:hover {
+    background-color: #f5f5f5; /* Background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+  }
+  #robertosmith {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  h4#more {
+    border-top: 1px solid #000000; /* Add a top border */
+    padding-top: 10px; /* Adjust the value as needed */
+}
+  #bubble {
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .nav-item .active {
+    background-color: #0b14cd67; /* Background color for active item */
+    border-radius: 5px; /* Add rounded corners for active item */
+    color: #33333300; /* Text color for active item */
+}
+
+@media (max-width: 767px) {
+    /* Styles for screens with a maximum width of 767px */
+    .container {
+      flex-direction: column;
+    }
+    
+    #quan {
+        width: 260px;
+    }
+    #more {
+        width: 260px; 
+    }
+    .custom-list {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        list-style-type: none;
+        padding: 0;
+        margin-top: 40px;
+        margin-left: 175px;
+        font-size: 20px;
+      }
+      .custom-list li span.info {
+        display: inline-block; /* Make the span elements take up only the necessary width */
+        margin-left: -70px; /* Adjust the margin as needed */
+      }
+      
+      .custom-list li {
+        font-family: 'Times New Roman', sans-serif; /* Custom font family */
+        color: #333; /* Custom text color */
+        margin-bottom: 10px; /* Space between each list item */
+      }
+      .custom-list li span {
+        display: block;
+        white-space: nowrap;
+      }
+    #roberto {
+        margin-left: 80px;
+    }
+    nav {
+        font-size: 16px;
+        margin-top: 350px;
+    }
+    #titleh {
+        margin-right: 50px;
+    }
+    #rob {
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+    #smith {
+        margin-left: 90px;
+    }
+    #profile {
+        margin-left: 85px;
+    }
+    .carousel {
+        margin-left: 90px;
+    }
+   
+    .carousel-img {
+        width: auto; /* Adjust the width as per your needs */
+        height: 100%; /* Adjust the height as per your needs */
+        object-fit: cover;
+    }
+    .carousel-caption {
+        font-size: 16px;
+    }
+    .container img {
+      margin-bottom: 10px;
+    }
+    .custom-list li:hover span {
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        padding: 5px;
+        display: inline-block;
+      }
+      
+        
+  }
+  
+
