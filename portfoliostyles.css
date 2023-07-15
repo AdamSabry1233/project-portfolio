@@ -126,7 +126,6 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-top: 20px;
-    text-decoration: blink;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
@@ -143,7 +142,6 @@ nav {
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
         margin-top: 20px;
-        text-decoration: blink;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding: 10px;
         border-radius: 5px;
