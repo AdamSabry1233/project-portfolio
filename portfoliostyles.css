@@ -23,6 +23,39 @@ footer {
     text-decoration: none;
     border-radius: 4px;
   }
+  /* Add this CSS to your existing stylesheet or portfoliostyles.css file */
+
+/* Styles for carousel controls */
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+    overflow: hidden; /* Prevent overflowing on small screens */
+    width: 100%; /* Ensure the controls span the full width */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    padding: 0 20px; /* Add horizontal padding to create space */
+  }
+  
+  /* Styles for carousel control icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    background-color: #f302bb; /* Set a background color */
+    opacity: 0.8; /* Adjust the opacity as needed */
+    border-radius: 50%; /* Add a border-radius for a circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Add a transition effect for smoother visibility */
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    opacity: 1; /* Increase the opacity on hover */
+  }
+  
   
 
 header {
@@ -110,16 +143,18 @@ nav {
     margin-left: 175px;
 }
 
+
+
 .carousel-item img {
-    max-height: 500px; /* Adjust the value to set the desired maximum height */
-    width: 500px; /* Let the width adjust automatically based on the aspect ratio */
-    object-fit: cover; /* Ensure the entire image is visible within the container */
-    
-}
+    object-fit: cover; /* Maintain aspect ratio and cover the entire slide */
+    width: 100%; /* Set the width to 100% to fill the container */
+    height: 100%; /* Set the height to 100% to fill the container */
+  }
+  
 
 .carousel-caption {
     color: black; /* Set the desired text color */
-    font-size: 100px; /* Adjust the font size to your preference */
+    font-size: 20px; /* Adjust the font size to your preference */
     background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent background color */
     padding: 2px; /* Add some padding around the caption text */
     font-family: 'Times New Roman', Times, serif;
