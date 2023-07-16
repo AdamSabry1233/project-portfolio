@@ -2,6 +2,7 @@ body {
     background-color: rgba(192, 192, 192, 0.746);
     margin: 0;
     padding-top: 125px; /* Add padding to the top to make space for the image */
+    overscroll-behavior-y: none;
 }
 
 header {

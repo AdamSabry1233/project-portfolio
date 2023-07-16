@@ -202,93 +202,44 @@
 </div>
 
 <script>
-    // Function to check and update the active link
-    function updateActiveLink() {
-      // Get the current page's hash
-      const currentPageHash = window.location.hash;
-  
-      // Get the navbar links
-      const homeLink = document.getElementById('home-link');
-      const aboutLink = document.getElementById('about-link');
-      const resumeLink = document.getElementById('resume-link');
-  
-      // Remove active class from all links
-      homeLink.classList.remove('active');
-      aboutLink.classList.remove('active');
-      resumeLink.classList.remove('active');
-  
-      // Check if the current page's hash matches the link's href and apply the active class
-      if (currentPageHash === '#home') {
-        homeLink.classList.add('active');
-      } else if (currentPageHash === '#about') {
-        aboutLink.classList.add('active');
-      } else if (currentPageHash === '#resume') {
-        resumeLink.classList.add('active');
-      }
+  // Function to check and update the active link
+  function updateActiveLink() {
+    // Get the current page's hash
+    const currentPageHash = window.location.hash;
+
+    // Get the navbar links
+    const homeLink = document.getElementById('home-link');
+    const aboutLink = document.getElementById('about-link');
+    const resumeLink = document.getElementById('resume-link');
+
+    // Remove active class from all links
+    homeLink.classList.remove('active');
+    aboutLink.classList.remove('active');
+    resumeLink.classList.remove('active');
+
+    // Check if the current page's hash matches the link's href and apply the active class
+    if (currentPageHash === '#home') {
+      homeLink.classList.add('active');
+    } else if (currentPageHash === '#about') {
+      aboutLink.classList.add('active');
+    } else if (currentPageHash === '#resume') {
+      resumeLink.classList.add('active');
     }
+  }
+
+  // Update the active link when the hash changes
+  window.addEventListener('hashchange', updateActiveLink);
+
+  // Update the active link on page load
+  window.addEventListener('DOMContentLoaded', updateActiveLink);
+
+  // Disable automatic scrolling behavior of Bootstrap scrollspy
+  $('body').scrollspy({ target: '#vertical-nav', offset: 0 });
+</script>
+
   
-    // Update the active link when the hash changes
-    window.addEventListener('hashchange', updateActiveLink);
   
-    // Update the active link on page load
-    window.addEventListener('DOMContentLoaded', updateActiveLink);
   
-    // Disable automatic scrolling behavior of Bootstrap scrollspy
-    $('body').scrollspy({ target: '#vertical-nav', offset: 0 });
-  
-    // Track manual scrolling
-    let isScrolling = false;
-  
-    window.addEventListener('scroll', function () {
-      if (!isScrolling) {
-        isScrolling = true;
-  
-        // Get the scroll position and window height
-        const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight;
-  
-        // Get the navbar links
-        const homeLink = document.getElementById('home-link');
-        const aboutLink = document.getElementById('about-link');
-        const resumeLink = document.getElementById('resume-link');
-  
-        // Get the sections
-        const homeSection = document.getElementById('home');
-        const aboutSection = document.getElementById('about');
-        const resumeSection = document.getElementById('resume');
-  
-        // Check if each section is in the viewport and update the active link accordingly
-        if (
-          scrollPosition >= homeSection.offsetTop &&
-          scrollPosition < aboutSection.offsetTop - windowHeight
-        ) {
-          homeLink.classList.add('active');
-          aboutLink.classList.remove('active');
-          resumeLink.classList.remove('active');
-        } else if (
-          scrollPosition >= aboutSection.offsetTop - windowHeight &&
-          scrollPosition < resumeSection.offsetTop - windowHeight
-        ) {
-          homeLink.classList.remove('active');
-          aboutLink.classList.add('active');
-          resumeLink.classList.remove('active');
-        } else if (scrollPosition >= resumeSection.offsetTop - windowHeight) {
-          homeLink.classList.remove('active');
-          aboutLink.classList.remove('active');
-          resumeLink.classList.add('active');
-        } else {
-          homeLink.classList.remove('active');
-          aboutLink.classList.remove('active');
-          resumeLink.classList.remove('active');
-        }
-  
-        // Reset the isScrolling flag after a short delay
-        setTimeout(function () {
-          isScrolling = false;
-        }, 200);
-      }
-    });
-  </script>
   
     
     
