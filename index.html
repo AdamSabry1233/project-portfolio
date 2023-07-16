@@ -202,46 +202,45 @@
 </div>
 
 <script>
-  // Function to check and update the active link
-  function updateActiveLink() {
-    // Get the current page's hash
-    const currentPageHash = window.location.hash;
+// Function to check and update the active link
+function updateActiveLink() {
+  // Get the current page's hash
+  const currentPageHash = window.location.hash;
 
-    // Get the navbar links
-    const homeLink = document.getElementById('home-link');
-    const aboutLink = document.getElementById('about-link');
-    const resumeLink = document.getElementById('resume-link');
+  // Get the navbar links
+  const homeLink = document.getElementById('home-link');
+  const aboutLink = document.getElementById('about-link');
+  const resumeLink = document.getElementById('resume-link');
 
-    // Remove active class from all links
-    homeLink.classList.remove('active');
-    aboutLink.classList.remove('active');
-    resumeLink.classList.remove('active');
+  // Remove active class from all links
+  homeLink.classList.remove('active');
+  aboutLink.classList.remove('active');
+  resumeLink.classList.remove('active');
 
-    // Check if the current page's hash matches the link's href and apply the active class
-    if (currentPageHash === '#home') {
-      homeLink.classList.add('active');
-    } else if (currentPageHash === '#about') {
-      aboutLink.classList.add('active');
-    } else if (currentPageHash === '#resume') {
-      resumeLink.classList.add('active');
-    }
+  // Check if the current page's hash matches the link's href and apply the active class
+  if (currentPageHash === '#home') {
+    homeLink.classList.add('active');
+  } else if (currentPageHash === '#about') {
+    aboutLink.classList.add('active');
+  } else if (currentPageHash === '#resume') {
+    resumeLink.classList.add('active');
   }
+}
 
-  // Update the active link when the hash changes
-  window.addEventListener('hashchange', updateActiveLink);
+// Update the active link when the hash changes
+window.addEventListener('hashchange', updateActiveLink);
 
-  // Update the active link on page load
-  window.addEventListener('DOMContentLoaded', updateActiveLink);
-
+// Update the active link on page load
+window.addEventListener('DOMContentLoaded', () => {
   // Disable automatic scrolling behavior of Bootstrap scrollspy
   $('body').scrollspy({ target: '#vertical-nav', offset: 0 });
-</script>
 
-  
-  
-  
-  
-    
-    
+  // Call updateActiveLink after a brief delay to ensure the scrollspy has initialized
+  setTimeout(updateActiveLink, 100);
+});
+
+
+</script>
+ 
 </body>
 </html>
